@@ -1,21 +1,23 @@
 package top.bruned.kaiheila.sdk.util.http;
 
 import okhttp3.*;
+import top.bruned.kaiheila.sdk.util.Log;
 
 import java.io.IOException;
 
-public class sendhttp {
+public class Sendhttp {
+    private Log log;
     public MediaType mediaType=MediaType.Companion.parse("application/json;charset=utf-8");
-    private String url;
     private String authorization;
-    private String webServer = "https://www.kaiheila.cn/api";
+    private String webServer = "https://www.kaiheila.cn";
 
-    public sendhttp(String url, String authorization) {
-        this.url = url;
+    public Sendhttp(String authorization, Log log) {
         this.authorization = authorization;
+        this.log = log;
     }
 
     public String getHttp(String url) {
+        log.info("[GET]"+url);
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .url(webServer + url)
@@ -29,7 +31,8 @@ public class sendhttp {
         }
         return null;
     }
-    public String postHttp(String json) throws IOException {
+    public String postHttp(String url,String json){
+        log.info("[POST]"+url);
         OkHttpClient client = new OkHttpClient();
         RequestBody body = RequestBody.Companion.create(json, mediaType);
         Request request = new Request.Builder()
