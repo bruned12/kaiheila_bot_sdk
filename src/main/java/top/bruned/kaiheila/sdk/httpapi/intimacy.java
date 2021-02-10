@@ -4,7 +4,8 @@ import top.bruned.kaiheila.sdk.util.http.Sendhttp;
 
 public class intimacy {
     private Sendhttp api;
-    public intimacy(Sendhttp api){
+
+    public intimacy(Sendhttp api) {
         this.api = api;
     }
 }

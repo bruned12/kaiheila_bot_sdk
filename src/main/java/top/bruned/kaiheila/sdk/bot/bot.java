@@ -1,11 +1,10 @@
 package top.bruned.kaiheila.sdk.bot;
 
 import top.bruned.kaiheila.sdk.httpapi.*;
-import top.bruned.kaiheila.sdk.util.http.Sendhttp;
 import top.bruned.kaiheila.sdk.util.Log;
+import top.bruned.kaiheila.sdk.util.http.Sendhttp;
 
 public class bot {
-    private Log log = new Log("MAIN");
     public asset asset;
     public channel channel;
     public gateway gateway;
@@ -16,6 +15,7 @@ public class bot {
     public message message;
     public user user;
     public user_chat user_chat;
+    private Log log = new Log("MAIN");
 
 
     public bot(String authorization) {

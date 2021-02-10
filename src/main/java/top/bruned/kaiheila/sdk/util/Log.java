@@ -4,16 +4,17 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Log {
-    private String PluginName;
-
-    private String buildHead(String Level) {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm:ss:");
-        String date = simpleDateFormat.format(new Date());
-        return String.format("[%s][%s][%s]", Level, date, PluginName);
-    }
+    private final String PluginName;
 
     public Log(String PluginName) {
         this.PluginName = PluginName;
+    }
+
+    private String buildHead(String Level) {
+        Date nowdata = new Date( );
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm:ss:");
+        String date = simpleDateFormat.format(nowdata);
+        return String.format("[%s][%s][%s]", Level, date, PluginName);
     }
 
     public void info(String msg) {
@@ -28,4 +29,3 @@ public class Log {
         System.out.println(buildHead("DEBUG") + msg);
     }
 }
-//[INFO][12:12:12][PluginName]Plugin init
