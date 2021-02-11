@@ -1,5 +1,6 @@
 package top.bruned.kaiheila.sdk.httpapi;
 
+import top.bruned.kaiheila.sdk.httpapi.object.result.Rindex;
 import top.bruned.kaiheila.sdk.util.http.Sendhttp;
 
 public class gateway {
@@ -10,7 +11,7 @@ public class gateway {
         this.api = api;
     }
 
-    public void getIndex() {
-        api.getHttp(index);
+    public Rindex getIndex() {
+        return new Rindex(api.getHttp(index));
     }
 }

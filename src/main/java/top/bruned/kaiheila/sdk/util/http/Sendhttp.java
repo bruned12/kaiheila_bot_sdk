@@ -14,15 +14,16 @@ public class Sendhttp {
     public MediaType mediaType = MediaType.Companion.parse("application/json;charset=utf-8");
 
     public Sendhttp(String authorization, Log log) {
-        this.authorization = authorization;
+        this.authorization = "Bot " + authorization;
         this.log = log;
     }
 
     public JSONObject getHttp(String url) {
+        url = this.webServer + url;
         log.info("[GET]" + url);
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
-                .url(webServer + url)
+                .url(url)
                 .addHeader("Authorization", this.authorization)
                 .get()
                 .build();
@@ -30,14 +31,45 @@ public class Sendhttp {
     }
 
     public JSONObject postHttp(String url, String json) {
+        url = this.webServer + url;
         log.info("[POST]" + url);
         OkHttpClient client = new OkHttpClient();
         RequestBody body = RequestBody.Companion.create(json, mediaType);
         Request request = new Request.Builder()
                 .url(url)
                 .addHeader("Authorization", this.authorization)
+                .addHeader("Content-Type","application/json")
                 .post(body)
                 .build();
+
+        return getJsonObject(client, request);
+    }
+
+    public JSONObject getHttp(String url, String key, String val) {
+        url = this.webServer + url;
+        log.info("[GET]" + url);
+        OkHttpClient client = new OkHttpClient();
+        Request request = new Request.Builder()
+                .url(url)
+                .addHeader("Authorization", this.authorization)
+                .addHeader(key, val)
+                .get()
+                .build();
+        return getJsonObject(client, request);
+    }
+
+    public JSONObject postHttp(String url, String json, String key, String val) {
+        url = this.webServer + url;
+        log.info("[POST]" + url);
+        OkHttpClient client = new OkHttpClient();
+        RequestBody body = RequestBody.Companion.create(json, mediaType);
+        Request request = new Request.Builder()
+                .url(url)
+                .addHeader("Authorization", this.authorization)
+                .addHeader(key, val)
+                .post(body)
+                .build();
+
         return getJsonObject(client, request);
     }
 

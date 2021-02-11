@@ -4,12 +4,16 @@ plugins {
 
 group 'top.bruned'
 version '1.0-SNAPSHOT'
-
+jar {
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation("com.squareup.okhttp3:okhttp:4.9.0")
-    implementation('com.alibaba:fastjson:1.2.75')
+    compile("com.squareup.okhttp3:okhttp:4.9.0")
+    compile('com.alibaba:fastjson:1.2.75')
 }

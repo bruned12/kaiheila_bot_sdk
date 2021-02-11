@@ -15,7 +15,7 @@ public class bot {
     public message message;
     public user user;
     public user_chat user_chat;
-    private Log log = new Log("MAIN");
+    public Log log = new Log("MAIN");
 
 
     public bot(String authorization) {
