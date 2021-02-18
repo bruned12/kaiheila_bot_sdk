@@ -3,8 +3,8 @@ package top.bruned.kaiheila.sdk.httpapi;
 import com.alibaba.fastjson.JSON;
 import top.bruned.kaiheila.sdk.httpapi.object.data.Dmessage;
 import top.bruned.kaiheila.sdk.httpapi.object.data.Drole_index;
-import top.bruned.kaiheila.sdk.httpapi.object.result.Rmessage;
-import top.bruned.kaiheila.sdk.httpapi.object.result.Rrole_index;
+import top.bruned.kaiheila.sdk.httpapi.object.result.channel.Rmessage;
+import top.bruned.kaiheila.sdk.httpapi.object.result.channel.Rrole_index;
 import top.bruned.kaiheila.sdk.util.http.Sendhttp;
 
 public class channel {

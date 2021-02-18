@@ -1,4 +1,4 @@
-package top.bruned.kaiheila.sdk.httpapi.object.result;
+package top.bruned.kaiheila.sdk.httpapi.object.result.channel;
 
 import com.alibaba.fastjson.JSONObject;
 
