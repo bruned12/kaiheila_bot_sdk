@@ -13,9 +13,9 @@ public class Sendhttp {
     private final String webServer = "https://www.kaiheila.cn";
     public MediaType mediaType = MediaType.Companion.parse("application/json;charset=utf-8");
 
-    public Sendhttp(String authorization, Log log) {
+    public Sendhttp(String authorization) {
         this.authorization = "Bot " + authorization;
-        this.log = log;
+        this.log = new Log("HTTP");
     }
 
     public JSONObject getHttp(String url) {

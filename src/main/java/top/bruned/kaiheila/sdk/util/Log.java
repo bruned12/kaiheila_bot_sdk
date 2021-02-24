@@ -14,7 +14,7 @@ public class Log {
         Date nowdata = new Date( );
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm:ss:");
         String date = simpleDateFormat.format(nowdata);
-        return String.format("[%s][%s][%s]", Level, date, PluginName);
+        return String.format("[%s][%s][%s]", date,Level, PluginName);
     }
 
     public void info(String msg) {
