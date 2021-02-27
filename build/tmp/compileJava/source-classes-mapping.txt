@@ -1,55 +1,41 @@
-top/bruned/kaiheila/sdk/httpapi/result/guild_list/Meta.java
- top.bruned.kaiheila.sdk.httpapi.result.guild_list.Meta
+top/bruned/kaiheila/sdk/wsclient/result/event/AddedReactionEvent/Extra.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.AddedReactionEvent.Extra
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupImageMessageEvent/Extra.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupImageMessageEvent.Extra
 top/bruned/kaiheila/sdk/wsclient/result/RRECONNECT.java
  top.bruned.kaiheila.sdk.wsclient.result.RRECONNECT
-top/bruned/kaiheila/sdk/bot/Bot.java
- top.bruned.kaiheila.sdk.bot.Bot
 top/bruned/kaiheila/sdk/httpapi/result/guild_user_list/Game.java
  top.bruned.kaiheila.sdk.httpapi.result.guild_user_list.Game
-top/bruned/kaiheila/sdk/wsclient/base/EVENT.java
- top.bruned.kaiheila.sdk.wsclient.base.EVENT
-top/bruned/kaiheila/sdk/util/Log.java
- top.bruned.kaiheila.sdk.util.Log
-top/bruned/kaiheila/sdk/wsclient/result/RRESUME.java
- top.bruned.kaiheila.sdk.wsclient.result.RRESUME
 top/bruned/kaiheila/sdk/httpapi/result/channel_role_index/Permission_overwrites.java
  top.bruned.kaiheila.sdk.httpapi.result.channel_role_index.Permission_overwrites
 top/bruned/kaiheila/sdk/wsclient/base/RESUME.java
  top.bruned.kaiheila.sdk.wsclient.base.RESUME
-top/bruned/kaiheila/sdk/httpapi/result/guild_list/Sort.java
- top.bruned.kaiheila.sdk.httpapi.result.guild_list.Sort
-top/bruned/kaiheila/sdk/util/util.java
- top.bruned.kaiheila.sdk.util.util
-top/bruned/kaiheila/sdk/httpapi/result/guild_list/Items.java
- top.bruned.kaiheila.sdk.httpapi.result.guild_list.Items
-top/bruned/kaiheila/sdk/httpapi/result/guild_user_list/Guild_user_list.java
- top.bruned.kaiheila.sdk.httpapi.result.guild_user_list.Guild_user_list
+top/bruned/kaiheila/sdk/httpapi/result/message_create/Message_create.java
+ top.bruned.kaiheila.sdk.httpapi.result.message_create.Message_create
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupTextMessageEvent/GroupTextMessageEvent.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupTextMessageEvent.GroupTextMessageEvent
 top/bruned/kaiheila/sdk/httpapi/result/guild_user_list/Items.java
  top.bruned.kaiheila.sdk.httpapi.result.guild_user_list.Items
-top/bruned/kaiheila/sdk/wsclient/result/event/GroupMessageEvent/GroupMessageEvent.java
- top.bruned.kaiheila.sdk.wsclient.result.event.GroupMessageEvent.GroupMessageEvent
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupTextMessageEvent/Author.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupTextMessageEvent.Author
 top/bruned/kaiheila/sdk/httpapi/result/guild_list/Guild_list.java
  top.bruned.kaiheila.sdk.httpapi.result.guild_list.Guild_list
-top/bruned/kaiheila/sdk/wsclient/result/event/GroupMessageEvent/Extra.java
- top.bruned.kaiheila.sdk.wsclient.result.event.GroupMessageEvent.Extra
 top/bruned/kaiheila/sdk/wsclient/result/RHELLO.java
  top.bruned.kaiheila.sdk.wsclient.result.RHELLO
-top/bruned/kaiheila/sdk/wsclient/base/HELLO.java
- top.bruned.kaiheila.sdk.wsclient.base.HELLO
+top/bruned/kaiheila/sdk/wsclient/result/event/PersonTextMessageEvent/Extra.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.PersonTextMessageEvent.Extra
 top/bruned/kaiheila/sdk/httpapi/result/asset_create/Asset_create.java
  top.bruned.kaiheila.sdk.httpapi.result.asset_create.Asset_create
 top/bruned/kaiheila/sdk/httpapi/api.java
  top.bruned.kaiheila.sdk.httpapi.api
-top/bruned/kaiheila/sdk/httpapi/result/guild_user_list/Music.java
- top.bruned.kaiheila.sdk.httpapi.result.guild_user_list.Music
-top/bruned/kaiheila/sdk/httpapi/result/message_create/Message_create.java
- top.bruned.kaiheila.sdk.httpapi.result.message_create.Message_create
-top/bruned/kaiheila/sdk/util/http/Sendhttp.java
- top.bruned.kaiheila.sdk.util.http.Sendhttp
+top/bruned/kaiheila/sdk/wsclient/result/event/PersonImgaeMessageEvent/Extra.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.PersonImgaeMessageEvent.Extra
+top/bruned/kaiheila/sdk/wsclient/result/event/base/Emoji.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.base.Emoji
 top/bruned/kaiheila/sdk/httpapi/result/guild_user_list/Hoist_info.java
  top.bruned.kaiheila.sdk.httpapi.result.guild_user_list.Hoist_info
-top/bruned/kaiheila/sdk/wsclient/base/RECONNECT.java
- top.bruned.kaiheila.sdk.wsclient.base.RECONNECT
+top/bruned/kaiheila/sdk/util/http/Sendhttp.java
+ top.bruned.kaiheila.sdk.util.http.Sendhttp
 top/bruned/kaiheila/sdk/wsclient/PING.java
  top.bruned.kaiheila.sdk.wsclient.PING
 top/bruned/kaiheila/sdk/wsclient/result/event/base/Author.java
@@ -58,9 +44,71 @@ top/bruned/kaiheila/sdk/httpapi/result/guild_mute_list/Guild_mute_list.java
  top.bruned.kaiheila.sdk.httpapi.result.guild_mute_list.Guild_mute_list
 top/bruned/kaiheila/sdk/wsclient/base/PONG.java
  top.bruned.kaiheila.sdk.wsclient.base.PONG
-top/bruned/kaiheila/sdk/wsclient/result/REVENT.java
- top.bruned.kaiheila.sdk.wsclient.result.REVENT
+top/bruned/kaiheila/sdk/wsclient/base/RECONNECT.java
+ top.bruned.kaiheila.sdk.wsclient.base.RECONNECT
+top/bruned/kaiheila/sdk/wsclient/result/event/PersonImgaeMessageEvent/PersonImageMessageEvent.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.PersonImgaeMessageEvent.PersonImageMessageEvent
 top/bruned/kaiheila/sdk/httpapi/result/gateway_index/Gateway_index.java
  top.bruned.kaiheila.sdk.httpapi.result.gateway_index.Gateway_index
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupImageMessageEvent/GroupImageMessageEvent.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupImageMessageEvent.GroupImageMessageEvent
+top/bruned/kaiheila/sdk/httpapi/result/guild_list/Meta.java
+ top.bruned.kaiheila.sdk.httpapi.result.guild_list.Meta
+top/bruned/kaiheila/sdk/bot/Bot.java
+ top.bruned.kaiheila.sdk.bot.Bot
+top/bruned/kaiheila/sdk/wsclient/result/event/AddedReactionEvent/AddedReactionEvent.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.AddedReactionEvent.AddedReactionEvent
+top/bruned/kaiheila/sdk/wsclient/result/event/PersonTextMessageEvent/PersonTextMessageEvent.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.PersonTextMessageEvent.PersonTextMessageEvent
+top/bruned/kaiheila/sdk/wsclient/base/EVENT.java
+ top.bruned.kaiheila.sdk.wsclient.base.EVENT
+top/bruned/kaiheila/sdk/util/Log.java
+ top.bruned.kaiheila.sdk.util.Log
+top/bruned/kaiheila/sdk/wsclient/result/RRESUME.java
+ top.bruned.kaiheila.sdk.wsclient.result.RRESUME
+top/bruned/kaiheila/sdk/httpapi/result/guild_list/Sort.java
+ top.bruned.kaiheila.sdk.httpapi.result.guild_list.Sort
+top/bruned/kaiheila/sdk/util/util.java
+ top.bruned.kaiheila.sdk.util.util
 top/bruned/kaiheila/sdk/httpapi/result/channel_role_index/Channel_role_index.java
  top.bruned.kaiheila.sdk.httpapi.result.channel_role_index.Channel_role_index
+top/bruned/kaiheila/sdk/httpapi/result/guild_list/Items.java
+ top.bruned.kaiheila.sdk.httpapi.result.guild_list.Items
+top/bruned/kaiheila/sdk/wsclient/result/event/AddedReactionEvent/Body.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.AddedReactionEvent.Body
+top/bruned/kaiheila/sdk/httpapi/result/guild_user_list/Guild_user_list.java
+ top.bruned.kaiheila.sdk.httpapi.result.guild_user_list.Guild_user_list
+top/bruned/kaiheila/sdk/wsclient/result/REVENT.java
+ top.bruned.kaiheila.sdk.wsclient.result.REVENT
+top/bruned/kaiheila/sdk/wsclient/base/HELLO.java
+ top.bruned.kaiheila.sdk.wsclient.base.HELLO
+top/bruned/kaiheila/sdk/wsclient/result/event/base/Attachments.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.base.Attachments
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupTextMessageEvent/Extra.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupTextMessageEvent.Extra
+top/bruned/kaiheila/sdk/httpapi/result/guild_user_list/Music.java
+ top.bruned.kaiheila.sdk.httpapi.result.guild_user_list.Music
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupExitedChannelEvent/ExitedChannelEvent.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupExitedChannelEvent.ExitedChannelEvent
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupJoinedChannelEvent/Body.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupJoinedChannelEvent.Body
+top/bruned/kaiheila/sdk/wsclient/result/event/PersonDeletedMessageEvent/Body.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.PersonDeletedMessageEvent.Body
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupDeletedMessageEvent/Extra.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupDeletedMessageEvent.Extra
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupExitedChannelEvent/Body.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupExitedChannelEvent.Body
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupExitedChannelEvent/Extra.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupExitedChannelEvent.Extra
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupDeletedMessageEvent/Body.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupDeletedMessageEvent.Body
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupJoinedChannelEvent/Extra.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupJoinedChannelEvent.Extra
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupDeletedMessageEvent/DeletedMessageEvent.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupDeletedMessageEvent.DeletedMessageEvent
+top/bruned/kaiheila/sdk/wsclient/result/event/GroupJoinedChannelEvent/JoinedChannelEvent.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.GroupJoinedChannelEvent.JoinedChannelEvent
+top/bruned/kaiheila/sdk/wsclient/result/event/PersonDeletedMessageEvent/Extra.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.PersonDeletedMessageEvent.Extra
+top/bruned/kaiheila/sdk/wsclient/result/event/PersonDeletedMessageEvent/PersonDeletedMessageEvent.java
+ top.bruned.kaiheila.sdk.wsclient.result.event.PersonDeletedMessageEvent.PersonDeletedMessageEvent
