@@ -1,4 +1,4 @@
-package top.bruned.kaiheila.sdk.wsclient.result.event.PersonGuildMemberOffline;
+package top.bruned.kaiheila.sdk.wsclient.result.event.PersonGuildMemberOfflineEvent;
 
 public class Extra {
     private String type;
