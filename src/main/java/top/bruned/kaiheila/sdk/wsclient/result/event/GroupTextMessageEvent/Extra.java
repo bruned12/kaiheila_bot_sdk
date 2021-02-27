@@ -1,6 +1,4 @@
-package top.bruned.kaiheila.sdk.wsclient.result.event.GroupMessageEvent;
-
-import top.bruned.kaiheila.sdk.wsclient.result.event.base.Author;
+package top.bruned.kaiheila.sdk.wsclient.result.event.GroupTextMessageEvent;
 
 import java.util.List;
 
