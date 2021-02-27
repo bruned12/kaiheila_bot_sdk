@@ -1,9 +1,8 @@
-package top.bruned.kaiheila.sdk.wsclient.result.event.GroupTextMessageEvent;
+package top.bruned.kaiheila.sdk.wsclient.result.event.JoinedChannelEvent;
 
 import top.bruned.kaiheila.sdk.wsclient.result.REVENT;
 
-public class GroupTextMessageEvent extends REVENT {
-
+public class JoinedChannelEvent extends REVENT {
     private Extra extra;
 
     public Extra getExtra() {
@@ -13,4 +12,6 @@ public class GroupTextMessageEvent extends REVENT {
     public void setExtra(Extra extra) {
         this.extra = extra;
     }
+
+
 }

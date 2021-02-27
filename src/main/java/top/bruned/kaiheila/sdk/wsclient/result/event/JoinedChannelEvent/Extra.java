@@ -1,4 +1,4 @@
-package top.bruned.kaiheila.sdk.wsclient.result.event.GroupAddedReactionEvent;
+package top.bruned.kaiheila.sdk.wsclient.result.event.JoinedChannelEvent;
 
 public class Extra {
     private String type;

@@ -3,6 +3,7 @@ package top.bruned.kaiheila.sdk.wsclient.result;
 import com.alibaba.fastjson.JSONObject;
 
 public class REVENT {
+    public JSONObject extra;
     private String channel_type;
     private int type;
     private String target_id;
@@ -11,7 +12,6 @@ public class REVENT {
     private String msg_id;
     private long msg_timestamp;
     private String nonce;
-    public JSONObject extra;
 
     public String getChannel_type() {
         return channel_type;
