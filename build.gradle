@@ -1,12 +1,13 @@
 plugins {
     id 'java'
 }
-
 group 'top.bruned'
-version '1.0-SNAPSHOT'
+version ''
+def libPath='..'
 jar {
-    from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    manifest {
+        attributes 'Manifest-Version': 1.0
+        attributes 'Class-Path': new File("$projectDir/libraries").list().findAll {it.endsWith('.jar') }.collect { "$libPath/$it" }.join(' ')
     }
 }
 repositories {
@@ -17,7 +18,9 @@ dependencies {
     compile("com.squareup.okhttp3:okhttp:4.9.0")
     compile('com.alibaba:fastjson:1.2.75')
 }
-
+tasks.withType(Jar) {
+    destinationDir = file("$rootDir/../KaiheilaBot/libraries/SDK")
+}
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }

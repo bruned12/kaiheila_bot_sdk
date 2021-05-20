@@ -12,7 +12,7 @@ public class Log {
 
     private String buildHead(String Level) {
         Date nowdata = new Date( );
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm:ss:");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("hh:mm:ss");
         String date = simpleDateFormat.format(nowdata);
         return String.format("[%s][%s][%s]", date,Level, PluginName);
     }
