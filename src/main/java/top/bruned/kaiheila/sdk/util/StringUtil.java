@@ -4,8 +4,8 @@ import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class util {
-    public static String createRandomStr(int length){
+public class StringUtil {
+    public static String createRandomStr(int length) {
         String str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         Random random = new Random();
         StringBuffer stringBuffer = new StringBuffer();

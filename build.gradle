@@ -15,12 +15,9 @@ repositories {
 }
 
 dependencies {
-    compile("com.squareup.okhttp3:okhttp:4.9.0")
     compile('com.alibaba:fastjson:1.2.75')
 }
-tasks.withType(Jar) {
-    destinationDir = file("$rootDir/../KaiheilaBot/libraries/SDK")
-}
+
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }
